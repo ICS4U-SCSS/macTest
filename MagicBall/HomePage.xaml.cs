@@ -35,6 +35,9 @@ namespace MagicBall
 		string nameActual = "Bob";
 		String passwordActual = "1234";
 
+		//change made again
+		string notNeeded;
+
 		public HomePage()
 		{
 			InitializeComponent();
@@ -46,8 +49,8 @@ namespace MagicBall
 			//outputLabel.Text = options[new Random().Next(options.Length - 1)];
 
 			//DependencyService.Get<IAudio>().PlayAudioFile("beep.mp3");
-			var page = new MagicBallPage();
-			App.Current.MainPage = page;
+
+			App.Current.MainPage = new MagicBallPage();
 
 		}
 
