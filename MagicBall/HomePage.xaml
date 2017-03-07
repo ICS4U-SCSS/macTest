@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MagicBall.HomePage" Title="Magic 8 Ball">
+	<ContentPage.Content>
+		<StackLayout x:Name="stack">
+			<Image x:Name="ball" Source="EightBall.gif" WidthRequest="50" TranslationY = "20"/>
+			<Label x:Name="titleLabel" Text="Magic 8 Ball" Font="50" HorizontalTextAlignment="Center"/>
+			<Button x:Name="shakeButton" Text = "Shake Me" Clicked="shakeButton_Clicked" />
+			<Label x:Name="outputLabel" FontSize= "26"/>
+			<Label x:Name="userNameLabel" Text="Please enter your Username:" />
+			<Entry x:Name="nameInput" Placeholder="Username" />
+			<Label x:Name="passwordLabel" Text="Please enter your Password:" />
+			<Entry x:Name="passwordInput" Placeholder="Password" />
+			<Button x:Name="loginButton" Text="Login" Clicked="loginButton_Clicked" />
+			<Label x:Name="welcomeLabel" Font="20" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
